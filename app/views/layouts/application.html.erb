@@ -4,11 +4,15 @@
     <title>Pecasa</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  	<%= link_to "Inicio", root_path %>
+	<%= link_to "Nosotros", about_path%>
+
     <%= yield %>
+
   </body>
 </html>
